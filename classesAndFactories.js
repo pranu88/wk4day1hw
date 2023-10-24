@@ -84,3 +84,31 @@ timmy.exercise()
 timmy.exercise()
 console.log(timmy)
 
+// =============================
+//       CHEF MAKE DINNERS
+// =============================
+
+class Dinner {
+    constructor(appetizer,entree,dessert){
+        this.appetizer = appetizer
+        this.entree = entree
+        this.dessert = dessert
+    }
+}
+// factory class
+class Chef {
+    constructor(){
+        this.menu = []
+
+    } 
+    cook(appetizer,entree,dessert){
+        let newDish = new Dinner(appetizer,entree,dessert)
+        this.menu.push(newDish)
+    } 
+}
+
+let chefVikas = new Chef
+chefVikas.cook('samosa','biryani','kheer')
+chefVikas.cook('cheesesticks','pizza','tiramisu')
+chefVikas.cook('chicken65','pulav','gulabjamun')
+console.log(chefVikas)
