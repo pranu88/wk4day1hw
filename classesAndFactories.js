@@ -1,3 +1,6 @@
+// =======================
+// HAMSTER AND PERSON
+// =======================
 class Hamster {
     owner = " "
     price = 15
@@ -63,16 +66,12 @@ let gus = new Hamster("Gus")
 // creating object for Person class
 const timmy = new Person('Timmy')
 timmy.age =5
+for(let i =0; i < 5; i++){
 timmy.eat()
-timmy.eat()
-timmy.eat()
-timmy.eat()
-timmy.eat()
-timmy.exercise()
-timmy.exercise()
-timmy.exercise()
-timmy.exercise()
-timmy.exercise()
+}
+for(let i = 0; i < 5; i++){
+    timmy.exercise()
+}
 timmy.age =9
 gus.owner = "Timmy"
 timmy.buyHamster()
