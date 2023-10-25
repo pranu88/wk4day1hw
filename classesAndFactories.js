@@ -65,20 +65,25 @@ class Person {
 let gus = new Hamster("Gus")
 // creating object for Person class
 const timmy = new Person('Timmy')
-timmy.age =5
+for(let i =0; i < 5;i++){
+    timmy.ageUp()
+}
 for(let i =0; i < 5; i++){
 timmy.eat()
 }
 for(let i = 0; i < 5; i++){
     timmy.exercise()
 }
-timmy.age =9
+for(let i =0; i < 9;i++){
+    timmy.ageUp()
+}
 gus.owner = "Timmy"
 timmy.buyHamster()
-timmy.age = 15
+for(let i =0; i < 15;i++){
+    timmy.ageUp()
+}
 timmy.eat()
 timmy.eat()
-console.log(timmy)
 timmy.exercise()
 timmy.exercise()
 console.log(timmy)
